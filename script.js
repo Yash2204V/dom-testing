@@ -4,13 +4,14 @@ var b = document.querySelector("#bulb");
 let flag = 0;
 a.addEventListener("click",function(){
     if(flag == 0){
-        b.style.backgroundColor = "yellow";
+        b.style.background = "linear-gradient(orange, yellow)";
         a.innerHTML = "OFF"
         flag++; // 1
     }
     else{
-        b.style.backgroundColor = "white";
+        b.style.background = "white";
         a.innerHTML = "ON"
         flag--; // 0
     }
 })
+
